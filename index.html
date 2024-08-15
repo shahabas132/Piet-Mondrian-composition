@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=M+PLUS+1p&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Teko:wght@300..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=M+PLUS+1p&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Teko:wght@300..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      /* justify-content: center; */
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+      background-color:#DFD3C3;
+    }
+
+    .heading{
+      text-align: center;
+      font-family: "Tinos", serif;
+      font-size: xxx-large;
+    }
+
+    .container{
+      display: grid;
+      background-color: black;
+      height: 748x;
+      width: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 155px 130px 22px;
+      gap: 9px;
+    }
+    
+    .item{
+      background-color: #F9F2ED;
+    }
+
+    .red{
+      background-color: #B80000;
+    }
+
+    .white1{
+      grid-column: span 3;
+    }
+
+    .white2{
+      grid-row: span 2;
+    }
+
+    .white3{
+      /* grid-row: span 2;
+      grid-column: span 2; */
+      grid-area: 2/ 2 / 4 /4
+    }
+
+    .blue{
+      background-color:#004592 ;
+      border-bottom: 10px solid #000;
+    }
+
+    .white4{
+      grid-row: span 2;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .black{
+      background-color:#232629 ;
+    }
+    span{
+      font-family:"Edu VIC WA NT Beginner", cursive;
+      color: #8D493A;
+    }
+    .para{
+      margin-right: 30px;
+      margin-left: 30px;
+      text-align: center;
+      margin-bottom: 50px;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:medium;
+      font-size: 20px;
+      font-style: italic;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+
+  <h1 class="heading"> Piet Mondrian <br>
+    <span>Composition with Yellow, Blue and Red (1937–42)</span></h1>
+    <br>
+    <p class="para">As well as abstract art Mondrian was also passionate about dancing! Apparently he didn't like slow traditional dances like waltzes or tango, but enjoyed high energy, fast dancing styles! He even called one of his abstract paintings Broadway Boogie Woogie after a popular dance of the time.When Mondrian made his paintings, he would always mix his own colours, never using the paint directly out of a tube. He often used primary colours – red yellow and blue – as in this painting.<br><br>Mondrian did not use a ruler to measure out his lines! He thought carefully about where to place the lines, like those that you see in this painting. Notice how the red, yellow and blue are placed to the side and the centre of painting doesn't have any colour. Mondrian often used colour and composition in this way. (A composition is the arrangement of shapes and images in a picture).Although he is best known for his abstract paintings made from squares and rectangles, Piet Mondrian started out painting realistic scenes. He especially liked painting trees</p>
+
+  <div class="container">
+    <div class="item red"></div>
+    <div class="item white1"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
+
+
+    <div class="item blue"></div>
+    <div class="item white4"></div>
+
+    <div class="item"></div>
+    <div class="item yellow"></div>
+    <div class="item black"></div>
+  </div>
+</body>
+
+</html>
